@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Art Institute of Chicago API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
