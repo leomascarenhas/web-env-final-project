@@ -66,6 +66,7 @@ Implement at least 3 to 5 additional tests from the list below (or propose their
 
 ## HTML Page
 Using the data from the AIC API, create a webpage displaying the artworks with the related information: Title, Artist(s), Date and Place of Origin
+
 No need for "Coding": The instructor will provide an html that you can modify to implement your features.
 
 ---
