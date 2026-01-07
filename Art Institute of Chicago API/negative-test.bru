@@ -1,0 +1,15 @@
+meta {
+  name: Negative test
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.artic.edu/api/v1/artworks/1111
+  body: none
+  auth: none
+}
+
+docs {
+  Created a test with an artwork id that does not exist and got a 404 status code
+}
