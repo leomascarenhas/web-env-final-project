@@ -1,0 +1,19 @@
+meta {
+  name: Artwork ID,Title
+  type: http
+  seq: 7
+}
+
+get {
+  url: https://api.artic.edu/api/v1/artworks/?fields=id,title
+  body: none
+  auth: inherit
+}
+
+params:query {
+  fields: id,title
+}
+
+settings {
+  encodeUrl: true
+}
