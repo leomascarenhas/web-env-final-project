@@ -1,0 +1,25 @@
+meta {
+  name: Validate Artwork Fields (id)
+  type: http
+  seq: 4
+}
+
+get {
+  url: '''
+    https://api.artic.edu/api/v1/artworks?fields=id,title
+    https://api.artic.edu/api/v1/artworks?fields=id
+'''
+  body: none
+  auth: inherit
+}
+
+params:query {
+  fields: '''
+    id,title
+    https://api.artic.edu/api/v1/artworks?fields=id
+  '''
+}
+
+settings {
+  encodeUrl: true
+}
