@@ -1,0 +1,21 @@
+meta {
+  name: pagination and limit
+  type: http
+  seq: NaN
+}
+
+get {
+  url: https://api.artic.edu/api/v1/artworks?page=2&limit=5
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 2
+  limit: 5
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
