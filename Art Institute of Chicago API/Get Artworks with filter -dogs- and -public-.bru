@@ -1,0 +1,20 @@
+meta {
+  name: Get Artworks with filter "dogs" and "public"
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.artic.edu/api/v1/artworks/search?q=dogs?&query[term][is_public_domain]=true
+  body: none
+  auth: inherit
+}
+
+params:query {
+  q: dogs?
+  query[term][is_public_domain]: true
+}
+
+settings {
+  encodeUrl: true
+}
