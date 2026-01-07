@@ -4,6 +4,10 @@
 
 **Instructor:** Leonardo Mascarenhas
 
+**Team members:** Evgeniya Gurulea, Lara Anton, Kylene Anne Aguila
+
+**Trello Board:** [Trello link](https://trello.com/invite/b/695d91dad1cd0c1509cfd38e/ATTIb9e7872d40988069dd6b051c6131503235ED136C/web-environment-group-project)
+
 **Purpose:** Provide a hands-on exercise to install tools, explore a public API, run an existing collection, and write additional API tests.
 
 ---
