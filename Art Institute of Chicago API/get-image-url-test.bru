@@ -1,0 +1,28 @@
+meta {
+  name: GET Image URL Test
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.artic.edu/api/v1/artworks/260219?fields=id,title,image_id
+  body: none
+  auth: none
+}
+
+params:query {
+  fields: id,title,image_id
+}
+
+docs {
+  API Documentation instructions to access image URLs
+  
+  Take iiif_url
+  https://www.artic.edu/iiif/2
+  
+  & add `image_id` as a field (add /)
+  
+  followed by
+  /full/843,/0/default.jpg
+  
+}
