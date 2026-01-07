@@ -5,11 +5,15 @@ meta {
 }
 
 get {
-  url: https://api.artic.edu/api/v1/artworks/1111
+  url: https://api.artic.edu/api/v1/artworks?fields=style
   body: none
   auth: none
 }
 
+params:query {
+  fields: style
+}
+
 docs {
-  Created a test with an artwork id that does not exist and got a 404 status code
+  Created a test with a field that doesn't exist and it returns a 200 status code with empty data.
 }
