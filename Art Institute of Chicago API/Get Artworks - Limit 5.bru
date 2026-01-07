@@ -1,0 +1,19 @@
+meta {
+  name: Get Artworks - Limit 5
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.artic.edu/api/v1/artworks?limit=5
+  body: none
+  auth: inherit
+}
+
+params:query {
+  limit: 5
+}
+
+settings {
+  encodeUrl: true
+}
