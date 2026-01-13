@@ -4,11 +4,16 @@
 
 **Instructor:** Leonardo Mascarenhas
 
+**Purpose:** Provide a hands-on exercise to install tools, explore a public API, run an existing collection, and write additional API tests.
+
+---
+
 **Team members:** Evgeniya Gurulea, Lara Anton, Kylene Anne Aguila
 
 **Trello Board:** [Trello link](https://trello.com/invite/b/695d91dad1cd0c1509cfd38e/ATTIb9e7872d40988069dd6b051c6131503235ED136C/web-environment-group-project)
 
-**Purpose:** Provide a hands-on exercise to install tools, explore a public API, run an existing collection, and write additional API tests.
+## Summary of approach
+We used trello to write and organize the individual tasks that needed to be completed and assigned them to a team member. We each completed our tasks and communicated with each other when we were facing any issues, such as issues with pulling or pushing to the repository using GitHub. While working on the project on VS Code, a member encountered an issue relating to a file that was created automatically preventing the pulling and pushing to the repository. This was solved by deleting the file only.
 
 ---
 
