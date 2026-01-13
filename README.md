@@ -1,6 +1,6 @@
 # Web Development Environment 1 — Final Project
 
-**Course:** Web Development Environment 1  
+**Course:** Web Development Environment 1
 
 **Instructor:** Leonardo Mascarenhas
 
@@ -8,8 +8,22 @@
 
 ---
 
+## Group 2 Team Members
+
+- Mary Grace Nazareno
+- Rama Chaker
+- Muhammad Zafar
+
+## Contribution Summary
+
+This project was completed collaboratively by Group 2. Muhammad modified the provided HTML file using a code editor and tested it in a web browser, implementing JavaScript fetch to retrieve artwork data from the Art Institute of Chicago API and display the title, artist, date, and place of origin. Rama implemented three API tests in Postman to validate error handling, including invalid requests returning 4xx responses, image URL verification, and negative parameter testing that returned server errors. Mary implemented a Bruno request to retrieve a minimal API response by limiting returned fields to only the artwork id, ensuring response schema consistency.
+
+---
+
 ## Overview 💡
+
 This repository contains a starter API testing exercise using the **Art Institute of Chicago (AIC)** public API. Students will:
+
 - Explore the AIC API documentation,
 - Use the provided collection (`Art Institute of Chicago API/bruno.json`) to run tests,
 - Add and run further tests (manual and automated if they choose),
@@ -20,6 +34,7 @@ API docs: https://api.artic.edu/docs/#introduction
 ---
 
 ## What’s in this repo 🔎
+
 - `Art Institute of Chicago API/`
   - `bruno.json` — Postman (or compatible) collection for the exercise
   - `Get all Artworks.bru` — provided request export
@@ -28,10 +43,13 @@ API docs: https://api.artic.edu/docs/#introduction
 ---
 
 ## Getting started — prerequisites & tools 🔧
+
 Install one of these:
+
 - Bruno https://www.usebruno.com/
 
 Basic steps:
+
 1. Clone the repo:
    ```bash
    git clone <repo-url>
@@ -42,6 +60,7 @@ Basic steps:
 ---
 
 ## Use the provided collection
+
 - Import `Art Institute of Chicago API/bruno.json` into Bruno.
 - Run the included request "Get all Artworks".
 - Inspect response body, headers, and status codes.
@@ -49,12 +68,15 @@ Basic steps:
 ---
 
 ## Organize your work!
+
 Create a Trello board or a GitHub Project to organize the group tasks.
 
 ---
 
 ### API tests
+
 Implement at least 3 to 5 additional tests from the list below (or propose their own):
+
 - Verify pagination and `limit` works correctly.
 - Validate a response field schema (e.g., each artwork has `id`, `title`).
 - Test search/filter endpoint or query parameter (e.g., filter by artist).
@@ -65,6 +87,7 @@ Implement at least 3 to 5 additional tests from the list below (or propose their
 ---
 
 ## HTML Page
+
 Using the data from the AIC API, create a webpage displaying the artworks with the related information: Title, Artist(s), Date and Place of Origin
 
 No need for "Coding": The instructor will provide an html that you can modify to implement your features.
@@ -72,6 +95,7 @@ No need for "Coding": The instructor will provide an html that you can modify to
 ---
 
 ## Submission instructions & workflow 📥
+
 - Create a branch `lab1-<yourname>` (e.g., `lab1-leo`).
 - Add your tests and any notes/screenshots.
 - Update this README with a 1-paragraph summary of your approach and findings.
@@ -85,13 +109,13 @@ No need for "Coding": The instructor will provide an html that you can modify to
 ---
 
 ## Tips & resources 💬
-- Read the AIC docs carefully before testing.  
-- Prefer automated tests for reproducibility (students may choose tools they know).  
+
+- Read the AIC docs carefully before testing.
+- Prefer automated tests for reproducibility (students may choose tools they know).
 - If you’re unsure about a request, add an issue in the repo and tag the instructor.
 
 ---
 
 > **Important:** This exercise is about practicing **installation, configuration, and testing of APIs**. Encourage curiosity — explore endpoints, try variations, and document results.
-
 
 Good luck!

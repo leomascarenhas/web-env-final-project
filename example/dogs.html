@@ -7,17 +7,22 @@
 
 <body>
     <h1>Explore Dogs API</h1>
-    <div id="dog-div">Oups</div>
+    <div id="dog-div">LALAL</div>
 
     <input type="text" name="breed" id="breed">
-    <input type="button" name="submit" id="search" value="Search">
+    <input type="button" name="submit" id="search-btn">
 
     <script>
-        document.getElementById('search').addEventListener('click', () => sendRequest());
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log("Loading...")
 
-        const sendRequest = () => {
-            let breedValue = document.getElementById('breed').value || "rottweiler";
-            fetch(`https://dog.ceo/api/breed/${breedValue}/images/random`)
+            const searchBtn = document.getElementById('search-btn');
+            let breed = "akita";
+            searchBtn.addEventListener('click', function () {
+                breed = document.getElementById('breed').value;
+            });
+
+            fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data.message);
@@ -25,10 +30,10 @@
                     div.innerHTML = `<img src=${data.message}>`;
                 })
                 .catch(error => console.error(error))
-            }
+        });
 
-        sendRequest();
     </script>
+
 </body>
 
 </html>
