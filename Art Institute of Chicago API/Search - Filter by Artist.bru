@@ -1,0 +1,26 @@
+meta {
+  name: Search / Filter by Artist
+  type: http
+  seq: 4
+}
+
+get {
+  url: '''
+    https://api.artic.edu/api/v1/artworks/search?q=monet
+    https://api.artic.edu/api/v1/artworks/search?q=monet
+'''
+  body: none
+  auth: inherit
+}
+
+params:query {
+  q: '''
+    monet
+    https://api.artic.edu/api/v1/artworks/search?q=monet
+  '''
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

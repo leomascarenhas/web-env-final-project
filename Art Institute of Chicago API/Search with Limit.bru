@@ -1,0 +1,20 @@
+meta {
+  name: Search with Limit
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://api.artic.edu/api/v1/artworks/search?q=picasso&limit=5
+  body: none
+  auth: inherit
+}
+
+params:query {
+  q: picasso
+  limit: 5
+}
+
+settings {
+  encodeUrl: true
+}

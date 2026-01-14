@@ -1,0 +1,26 @@
+meta {
+  name: Validate Artwork response schema (id & title)
+  type: http
+  seq: 3
+}
+
+get {
+  url: '''
+    https://api.artic.edu/api/v1/artworks?fields=id,title
+    https://api.artic.edu/api/v1/artworks?fields=id
+'''
+  body: none
+  auth: inherit
+}
+
+params:query {
+  fields: '''
+    id,title
+    https://api.artic.edu/api/v1/artworks?fields=id
+  '''
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

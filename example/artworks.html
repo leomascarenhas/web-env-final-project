@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dogs API</title>
+</head>
+
+<body>
+    <h1>Explore Artworks API</h1>
+    <div id="artworks"></div>
+
+
+    <script>
+        fetch("https://api.artic.edu/api/v1/artworks?limit=5")
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById("artworks");
+
+                data.data.forEach(art => {
+                    container.innerHTML += `
+            <div>
+              <h3>${art.title}</h3>
+              <p><strong>Artist:</strong> ${art.artist_title || "Unknown"}</p>
+              <p><strong>Date:</strong> ${art.date_display || "N/A"}</p>
+              <p><strong>Origin:</strong> ${art.place_of_origin || "N/A"}</p>
+            </div>
+            <hr>
+          `;
+                });
+            });
+    </script>
+
+    </script>
+
+</body>
+
+</html>
